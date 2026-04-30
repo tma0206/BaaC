@@ -1,6 +1,8 @@
-# LOB: Landscape Oracle BONSAI
+# BaaC: Bonsai as a Code
 
-## BaaC（Bonsai as a Code）リポジトリ仕様
+## Powered by LOB（Landscape Oracle BONSAI）
+
+### リポジトリ仕様
 
 | 項目 | 値 |
 |------|-----|
@@ -74,7 +76,7 @@ flowchart LR
 
 ### 5. Landscape Oracle BONSAI (AI)
 
-同梱のQRコードから、30年以上の知見を学習した専用AIへアクセス可能です。
+同梱のQRコードから、25年以上の知見を学習した専用AIへアクセス可能です。
 
 - **デバッグ支援**: 「葉の色」「樹勢」等の事象に対し、適切な対処法を提案します。
 - **リファクタリング・ガイド**: 盆栽の樹形を美しく整えるための設計思想をガイドします。
@@ -83,23 +85,12 @@ flowchart LR
 
 ---
 
-### 6. Package & Price
-
-**Price: 10,000 JPY**
-
-- LOB 本体（物理オブジェクト）
-- 開発用USBライト / デバッグ・ピンセット
-- USB-C 変換アダプタ（Legacy Port Patch）
-- Oracle Access Key（QRカード）
-
----
-
-### 7. リポジトリ内のその他パス（参考）
+### 6. リポジトリ内のその他パス（参考）
 
 | パス | 役割 |
 |------|------|
 | [`docs/it-tribe-manifesto/`](docs/it-tribe-manifesto/) | IT トライブ向けマニフェスト |
-| [`inventory/`](inventory/) | 出品・在庫関連テンプレート |
+| [`inventory/`](inventory/) | 出品・在庫関連。**価格・同梱内容は各 Instance ファイルで管理。** |
 | [`knowledge/bonsai/`](knowledge/bonsai/) | 季節管理・剪定などのナレッジ |
 | [`system/line-bot/`](system/line-bot/) | LINE 連携スクリプト |
 | [`prompts/bonsai/`](prompts/bonsai/) | AI 用プロンプト |
@@ -107,3 +98,5 @@ flowchart LR
 ---
 
 **"Bonsai is Object-Oriented Life."**
+
+by 株式会社緑酔園 / Ryokusuien Co., Ltd.
