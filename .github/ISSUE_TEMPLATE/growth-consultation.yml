@@ -1,0 +1,41 @@
+name: 育成相談（Growth consultation）
+description: 水やり・芽摘み・置き場など、育成方針について相談する
+title: "[育成] "
+labels:
+  - consultation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **BaaC（Bonsai as a Code）** 育成相談用テンプレートです。  
+        可能ならリポジトリ直下の `bonsai.yaml`（真柏・`env: production` 等）のスペックに沿って記載してください。
+  - type: textarea
+    id: context
+    attributes:
+      label: 現在のコンテキスト
+      description: 購入時期、置き場（室内/屋外・日当たり）、最近の気候など
+      placeholder: 例：南向きベランダ、春先から屋外管理…
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 相談内容（Update / Refactoring / その他）
+      description: 水やり（Update）の頻度、芽摘み（Refactoring）のタイミング、剪定の不安など
+      placeholder: 例：Update をどのくらいの感覚で…
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: 写真・リンク
+      description: 全体・気になる箇所の写真をドラッグ＆ドロップ、または URL
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 既読チェック（任意）
+      options:
+        - label: docs/operation.md を読んだ
+        - label: docs/troubleshooting.md で似た症状を確認した

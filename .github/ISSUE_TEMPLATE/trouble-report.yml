@@ -1,0 +1,50 @@
+name: トラブル報告（Trouble report）
+description: 葉の変色・害虫・急な枯れ込みなど、不具合（Bug）の報告
+title: "[トラブル] "
+labels:
+  - trouble
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **デバッグ用テンプレート**です。併せて `docs/troubleshooting.md` を読み、記載すると切り分けが早くなります。
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待していた動作（Expected）
+      placeholder: 例：春芽が均一に展開している状態
+    validations:
+      required: false
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の観測（Actual / Bug）
+      description: いつから、どの部位か
+      placeholder: 例：先端から2週間前より茶枯れが…
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 再現に近い条件（Steps / Environment）
+      description: 直近の水やり、肥料、移動、寒波など
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 深刻度（Severity）
+      options:
+        - S4 観測のみ・拡大なし
+        - S3 一部枝・進行ゆるい
+        - S2 複数枝・進行あり
+        - S1 全株・幹/根元に異常
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: 写真・動画
+      description: 全体・近接・鉢土の様子があると助かります
+    validations:
+      required: false

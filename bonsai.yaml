@@ -1,0 +1,24 @@
+# BaaC (Bonsai as a Code) — canonical specimen specification
+# SSOT: 購入者・運用ドキュメント・Issue はこの宣言を参照すること
+
+apiVersion: baac/v1
+kind: BonsaiSpec
+metadata:
+  name: shimpaku-production-001
+  labels:
+    project: baac
+    env: production
+spec:
+  species:
+    ja: 真柏
+    en: Shimpaku
+    botanical: Juniperus chinensis var. sargentii
+  dimensions:
+    height_cm: 20
+  power:
+    connector: USB-C
+    voltage_v: 5
+    current_a_max: 2
+    note: "LOB Stable Build v1.0 に準拠（補助照明・周辺機器の電源仕様）"
+  runtime:
+    env: production
